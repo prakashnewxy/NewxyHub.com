@@ -1,0 +1,247 @@
+/* Week 4 starts here */
+/* Pretask
+  This week, choose three colors that you want your website to have. 
+  Use this page: https://www.w3schools.com/cssref/css_colors.asp
+  Background:#
+  Primary text:
+  Accent:
+*/
+
+/*
+  This sets the default font on our site. Feel free to change it! Remember to uncomment!
+*/
+* {  font-family:"manaco"}
+  /* font-family: fantasy; */
+
+
+/* Task 1: Update the body element selector to change the default colors we are using for the body of the page! 
+          - Note: The element selector selects HTML elements based on the element name.
+          - update the color to the primary text color you chose above
+          - update the background-color to the background color you chose above
+          - add other attributes such as font-family & font-size 
+*/
+body {
+  background-color:#000000 ;
+  color:green;
+}
+  .blue_box{
+  background-color:powderblue ;
+  color:green;
+}
+.red_box{
+  background-color:darkcyan ;
+  color:green;
+}
+#grad {
+  background-image: linear-gradient(to right, black , red);
+}
+/* Task 2: Style the title (h1) text:
+          - make an 'h1' tag selector
+          - set the 'color' property to a color of your choice
+          - set the 'background-color' property to a color of your choice*/
+
+
+h1 {
+  color:green;
+  background-colora:black;
+  text-align: gray;
+  text-shadow: yellow;
+   font-family:"bold"
+}
+              --#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
+              --#{$prefix}navbar-padding-y: #{$navbar-padding-y};
+              --#{$prefix}navbar-color: #{$navbar-light-color};
+              --#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};
+              --#{$prefix}navbar-disabled-color: #{$navbar-light-disabled-color};
+              --#{$prefix}navbar-active-color: #{$navbar-light-active-color};
+              --#{$prefix}navbar-brand-padding-y: #{$navbar-brand-padding-y};
+              --#{$prefix}navbar-brand-margin-end: #{$navbar-brand-margin-end};
+              --#{$prefix}navbar-brand-font-size: #{$navbar-brand-font-size};
+              --#{$prefix}navbar-brand-color: #{$navbar-light-brand-color};
+              --#{$prefix}navbar-brand-hover-color: #{$navbar-light-brand-hover-color};
+              --#{$prefix}navbar-nav-link-padding-x: #{$navbar-nav-link-padding-x};
+              --#{$prefix}navbar-toggler-padding-y: #{$navbar-toggler-padding-y};
+              --#{$prefix}navbar-toggler-padding-x: #{$navbar-toggler-padding-x};
+              --#{$prefix}navbar-toggler-font-size: #{$navbar-toggler-font-size};
+              --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-light-toggler-icon-bg)};
+              --#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
+              --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
+              --#{$prefix}navbar-toggler-focus-width: #{$navbar-toggler-focus-width};
+              --#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};
+/* Task 3: Style the section header (h2-h6) text:
+          - make an 'h2' tag selector (or whichever header size you used in your HTML document)
+          - set the 'color' property to a color of your choice
+          - set the 'text-decoration' property (options: underline, overline, underline overline, line-through)
+*/
+h2 {
+  color:green;
+  text-decoration: ;
+  font-family:"Rubik Marker Hatch"
+}
+
+/* Task 4: Style our images:
+          - play around with setting the `width` property (consider units of px or %)
+          - set the 'border' property to the size(px), style(solid, dotted), and color of your choice.
+              `border: sizepx style color;`
+          - play around with the  `border-radius` property, can you make your images into circles?? Choose a size that makes sense. 
+*/
+img {
+  width: 900;
+  border: 900;
+  border-radius:10%;
+}
+ left-right-padding {
+   padding-left: 15%;
+   padding-right: 15%;
+ }
+
+ body.left-right-padding > * {
+   margin-bottom: 5px;
+   margin-top: 5px;
+ }
+/* Task 5: Make a class to create colored boxes around different html div's:
+          - Note: The class selector selects HTML elements with a specific class attribute.
+          - what {color} do you want the box? name the class `.{color}-box` 
+              replace {color} with the color you want ex: white-box
+          - set some properties such as `height`, `width`, `color`, `background-color`, `text-align`
+          - play around with properties like `padding`, `border-style`, `border-color`
+          - now, head over to your HTML document and add this class in tags. 
+              for example, add a `<div class=".{color}-box"> </div>` around your first paragraph, or around your gallery, or both!
+*/
+#conclusion {
+  color: midnightblue;
+  background-color: lightsteelblue;
+}
+
+.flex-column {
+  display: flex;
+flex-direction: column;
+  justify-content: space-around; 
+  align-items: center;
+}
+
+/* Task 6 (if you have extra time): Make a class to center elements
+          - make a class named `.centered`
+          - set the `text-align` property to center
+          - now, head over to your HTML document and add this class in tags 
+              for example, you can add this class to your list: <ul class="centered"> ... </ul>
+              or make a new div around your pictures: <div class="centered> {move pictures or <img /> in here} </div> 
+*/
+
+
+/* Task 7 (if you have extra time): Make a class selector to specially format list item elements affected by the class .centered
+          - make a class selector for list items of class centered: `.centered li {}`
+          - if there were list items contained within the `class=centered` in your  HTML, the list items will be affected by this selector!
+          - to see this, play with the properties `display` and `list-style-type`
+*/
+
+
+/* Task 8 (if you have extra time): Make a class selector to specially format image elements affected by the class
+          - make a class selector for images of class centered: `.centered img {}`
+          - if there were images contained within the `class=centered` in your  HTML, the images will be affected by this selector!
+          - to see this, set the properties `width`, `height`, and `border-radius`
+*/
+
+
+/* Week 4 ends here */
+
+/* Week 5 starts here */
+
+/* Task 9: Make an ID selector called `#conclusion` to format a specific HTML element 
+          - Note: The id selector uses the id attribute of an HTML element to select a specific element.
+          - set properties `color`, `background-color`
+          - now, in your HTML page, add a paragraph at the bottom of the page with this element id `<p id="conclusion"> </p>`
+          - write some text and check it out!
+*/
+
+
+/* Task 10: Make an ID selector called `#main-image` to specifically format one image
+          - make an ID selector called `#main-image` 
+          - add the property `border-radius` and set it to a percentage that makes your image a circle!
+          - now, in your HTML page, add this ID selector to one of your img element;
+    height: 100px; /* Adjust based on your logo's dimensions */
+    /* Adjust based on your logo's dimensions */
+
+/*.logo {
+    background-image: https://i.ytimg.com/vi/iFDRKMb2gEU/maxresdefault.jpg
+('logo.png');
+    height: 100px; /* Adjust based on your logo's dimensions */
+    /* width: 100px;  */   /* Adjust based on your logo's dimensions */
+
+
+/* Task 11: Make an astrick selector to format all HTML elements on the page
+          - Note: The universal selector (*) selects all HTML elements on the page.
+          - change the property `font-family`
+          - after exploring the power of the universal selector, you may delete it to have your original aesthetics
+*/
+  /* font-family: Sans-Serif; *
+
+/* Task 12: Create a new class `left-right-padding`
+          - add `padding-left` and `padding-right` properties and set it to `15%`
+          - add this class to the `body` html element
+          - play around with these percentages and see what happens!
+          - add a new selector `body.left-right-padding > *` 
+              Note: this means the for the body element that has the `left-right-padding` class, I want to select it's child elements
+          - play with the pixels for `margin-bottom` see what happens! (this style is to prepare for bootstrap in week 7 and 
+{*/
+
+/* Week 5 ends here */
+
+/* Week 6 starts here */
+
+/* Task 13: Make a class selector for flex-row and flex-columns. 
+          - add the property flex-direction in each of these, and set it to row and column accordingly.
+*/
+
+.flex-row {
+  /* here the Flexbox module is applied to this class */
+  display: flex;
+  /* below, set the `flex-direction` property to equal "row" */
+  flex-direction: row;
+  /* here defines that items will have even spacing around each other on the main axis */
+}
+
+.flex-column {
+  display: flex;
+  /* below, set the `flex-direction` property to equal "column" */
+  flex-direction: column;
+ 
+  align-items: left;
+}
+
+/* Task 14: Make 3 classes, one for each of the elements in your flexbox, to create colored boxes. 
+          - what color do you want the box? name the class after that color, for example `.pink-box`. Feel free to change the colors below!
+          - set some properties such as `color`, `background-color`, `order-style`
+          - now, head over to your HTML document and add these classes into your new paragraph tags */
+
+.lavender-box {
+
+}
+
+.lightpink-box {
+
+}
+
+.pink-box {
+
+}
+
+/* Week 6 ends here */
+
+/* Week 8 starts here */
+
+/* Task 15: Adjust the class `carousel-item` (NOT `carousel`) to have a min-height of 400px and a max-height of 600px
+          - play around with the values in both classes until it looks right for your pictures!
+*/
+
+.carousel {
+  width: 500px;
+  margin: auto;
+}
+
+.carousel-item {
+  min-height: 400px;
+  max-height: 600px;
+}
+
+/* Week 8 ends here */
